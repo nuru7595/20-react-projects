@@ -1,13 +1,13 @@
-import Header from "./components/Header.jsx";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Selector from "./components/Selector.jsx";
+import Selector from "./components/Selector";
 import { useState } from "react";
-import Information from "./components/Information.jsx";
-import Accordion from "./components/Accordion.jsx";
-import Empty from "./components/Empty.jsx";
+import Information from "./components/Information";
+import Accordion from "./components/pro1/Accordion";
+import Empty from "./components/Empty";
 
 export default function App() {
-    const [project, setProject] = useState("0");
+    const [project, setProject] = useState("1");
     const handleSelector = (e) => {
         setProject(e.currentTarget.value);
     };

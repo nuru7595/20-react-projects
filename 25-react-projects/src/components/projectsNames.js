@@ -1,4 +1,4 @@
-export const data = [
+const data = [
     {
         id: 0,
         name: "Information"
@@ -79,3 +79,5 @@ export const data = [
         name: "MERN Stack Blog App"
     }
 ];
+
+export default data;
