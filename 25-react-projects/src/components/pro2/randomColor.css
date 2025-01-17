@@ -1,0 +1,17 @@
+.random-color {
+    @apply px-3 py-6;
+}
+
+.random-color button {
+    @apply bg-zinc-800 text-cyan-500 px-6 py-2 rounded-xl outline-none hover:bg-zinc-900;
+}
+
+.random-color-text {
+    @apply text-center mt-6 py-12 font-bold text-white;
+}
+
+.random-color-text h3 {
+    padding: 12px 0;
+    text-shadow: 4px -4px 6px rgba(0, 0, 0, 1),
+        -4px 4px 6px rgba(0, 0, 0, 1);
+}

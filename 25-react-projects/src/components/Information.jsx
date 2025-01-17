@@ -10,19 +10,19 @@ export default function Information() {
                     </tr>
                     <tr>
                         <td>Last Updated:</td>
-                        <td>16 January 2025</td>
+                        <td>17 January 2025</td>
                     </tr>
                     <tr>
                         <td>Ongoing:</td>
-                        <td>1 Day</td>
+                        <td>2 Days</td>
                     </tr>
                     <tr>
                         <td>Allocated Time:</td>
-                        <td>3 Hours</td>
+                        <td>4 Hours</td>
                     </tr>
                     <tr>
                         <td>Progress:</td>
-                        <td>1 / 25 Projects</td>
+                        <td>2 / 25 Projects</td>
                     </tr>
                     <tr>
                         <td>Status:</td>

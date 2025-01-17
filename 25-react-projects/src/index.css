@@ -9,7 +9,7 @@ body {
 }
 
 section {
-  @apply bg-cyan-500 rounded-xl my-3;
+  @apply bg-cyan-500 rounded-xl my-3 overflow-hidden;
 }
 
 .title {

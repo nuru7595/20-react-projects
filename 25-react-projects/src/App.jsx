@@ -5,9 +5,10 @@ import { useState } from "react";
 import Information from "./components/Information";
 import Accordion from "./components/pro1/Accordion";
 import Empty from "./components/Empty";
+import RandomColor from "./components/pro2/RandomColor";
 
 export default function App() {
-    const [project, setProject] = useState("1");
+    const [project, setProject] = useState("2");
     const handleSelector = (e) => {
         setProject(e.currentTarget.value);
     };
@@ -23,6 +24,8 @@ export default function App() {
                     <Information />
                 ) : project === "1" ? (
                     <Accordion />
+                ) : project === "2" ? (
+                    <RandomColor />
                 ) : (
                     <Empty msg="Not Started Yet . . ." />
                 )}
