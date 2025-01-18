@@ -1,4 +1,4 @@
-import data from "./projectsNames";
+import data from "./data/projects";
 
 export default function Selector(props) {
     const options = data.map((x) => (

@@ -36,6 +36,10 @@ section {
   @apply px-4 py-1;
 }
 
+.info table a {
+  @apply underline tracking-wider;
+}
+
 h1 {
   @apply text-3xl;
 }

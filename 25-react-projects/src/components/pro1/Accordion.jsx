@@ -28,7 +28,7 @@ export default function Accordion() {
 
     return (
         <section>
-            <h2 className="title">Project 1: Accordion</h2>
+            <h2 className="title">Accordion</h2>
             <div className="accordion">
                 <button onClick={handleClick}>
                     {multiple ? "Disable" : "Enable"} Multiple View

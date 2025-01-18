@@ -6,9 +6,10 @@ import Information from "./components/Information";
 import Accordion from "./components/pro1/Accordion";
 import Empty from "./components/Empty";
 import RandomColor from "./components/pro2/RandomColor";
+import StarRating from "./components/pro3/StarRating";
 
 export default function App() {
-    const [project, setProject] = useState("2");
+    const [project, setProject] = useState("3");
     const handleSelector = (e) => {
         setProject(e.currentTarget.value);
     };
@@ -26,6 +27,8 @@ export default function App() {
                     <Accordion />
                 ) : project === "2" ? (
                     <RandomColor />
+                ) : project === "3" ? (
+                    <StarRating number={10} />
                 ) : (
                     <Empty msg="Not Started Yet . . ." />
                 )}
