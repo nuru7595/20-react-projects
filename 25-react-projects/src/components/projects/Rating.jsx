@@ -1,8 +1,7 @@
 import { useState } from "react";
-import "./starRating.css";
 import { FaStar } from "react-icons/fa";
 
-export default function StarRating({ number = 10 }) {
+export default function Rating({ title }) {
     const [rate, setRate] = useState(0);
     const [hover, setHover] = useState(0);
     const handleClick = (i) => {
@@ -17,9 +16,9 @@ export default function StarRating({ number = 10 }) {
 
     return (
         <section>
-            <h2 className="title">Star Rating</h2>
-            <div className="star-parent">
-                {[...Array(number)].map((_, i) => {
+            <h2 className="title">{title}</h2>
+            <div className="flex justify-center items-center py-6 px-3">
+                {[...Array(10)].map((_, i) => {
                     i += 1;
                     return (
                         <FaStar

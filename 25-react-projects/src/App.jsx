@@ -1,34 +1,70 @@
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Selector from "./components/Selector";
-import { useState } from "react";
 import Information from "./components/Information";
-import Accordion from "./components/pro1/Accordion";
 import Empty from "./components/Empty";
-import RandomColor from "./components/pro2/RandomColor";
-import StarRating from "./components/pro3/StarRating";
+import projects from "./components/data/projects";
+import { data, doneProject } from "./components/data/details";
 
 export default function App() {
-    const [project, setProject] = useState("3");
+    const [project, setProject] = useState(doneProject);
+    const [Component, setComponent] = useState(null);
+    const [title, setTitle] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
+
     const handleSelector = (e) => {
-        setProject(e.currentTarget.value);
+        const selectedProject = e.currentTarget.value;
+        if (!isNaN(selectedProject)) {
+            setProject(selectedProject);
+        }
     };
+
+    useEffect(() => {
+        const loadComponent = async () => {
+            setIsLoading(true);
+            const projectData = projects.find(
+                (x) => x.id === parseInt(project)
+            );
+            if (!projectData) {
+                setComponent(null);
+                setIsLoading(false);
+                return;
+            }
+            setTitle(projectData.title);
+
+            try {
+                const module = await import(
+                    `./components/projects/${projectData.name}.jsx`
+                );
+                setComponent(() => module.default);
+            } catch {
+                setComponent(null);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        if (project) loadComponent();
+    }, [project]);
 
     return (
         <>
             <Header />
             <main className="container">
-                <Selector project={project} func={handleSelector} />
+                <Selector
+                    data={projects}
+                    project={project}
+                    func={handleSelector}
+                />
                 {project === "" ? (
-                    <Empty msg="Please Select a Project from the Selector!!" />
-                ) : project === "0" ? (
-                    <Information />
-                ) : project === "1" ? (
-                    <Accordion />
-                ) : project === "2" ? (
-                    <RandomColor />
-                ) : project === "3" ? (
-                    <StarRating number={10} />
+                    <Empty msg="Please Select a Project!!" />
+                ) : parseInt(project) === 0 ? (
+                    <Information data={data} />
+                ) : isLoading ? (
+                    <Empty msg="Loading . . ." />
+                ) : Component ? (
+                    <Component title={title} />
                 ) : (
                     <Empty msg="Not Started Yet . . ." />
                 )}

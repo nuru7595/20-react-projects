@@ -55,3 +55,85 @@ h3 {
 h4 {
   @apply text-lg;
 }
+
+/* Project 1 */
+
+.accordion {
+  @apply text-center px-3 py-6;
+}
+
+.accordion button {
+  @apply bg-orange-400 py-3 px-6 rounded-lg outline-none;
+}
+
+.accordion-item {
+  @apply bg-orange-400 px-6 py-3 rounded-lg my-3 flex flex-col justify-center items-center max-w-[600px] mx-auto cursor-pointer select-none;
+}
+
+.accordion-question {
+  @apply w-full flex justify-between items-center;
+}
+
+.accordion-answer {
+  @apply mt-3;
+}
+
+.accordion-item span {
+  @apply text-xl font-bold
+}
+
+/* Project 2 */
+
+.random-color {
+  @apply px-3 py-6;
+}
+
+.random-color button {
+  @apply bg-zinc-800 text-cyan-500 px-6 py-2 rounded-xl outline-none hover:bg-zinc-900;
+}
+
+.random-color-text {
+  @apply text-center mt-6 py-12 font-bold text-white;
+}
+
+.random-color-text h3 {
+  padding: 12px 0;
+  text-shadow: 4px -4px 6px rgba(0, 0, 0, 1),
+    -4px 4px 6px rgba(0, 0, 0, 1);
+}
+
+/* Project 4*/
+
+.slider img {
+  @apply w-full rounded-lg;
+}
+
+.slider span {
+  @apply h-4 w-4 border-2 rounded-full block cursor-pointer;
+}
+
+/* Project 5 */
+
+.load-more>div {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-5;
+}
+
+.load-more .product {
+  @apply border-2 border-stone-800 rounded-lg p-2 bg-slate-400;
+}
+
+.load-more .product img {
+  @apply w-full rounded-md;
+}
+
+.load-more .product button {
+  @apply bg-stone-800 text-cyan-500 rounded-md py-1 hover:bg-stone-900;
+}
+
+.load-more>button {
+  @apply bg-black text-cyan-500 font-extrabold text-xl block mx-auto px-6 py-3 rounded-md mt-5;
+}
+
+.load-more>button:disabled {
+  @apply cursor-not-allowed bg-stone-800;
+}

@@ -1,12 +1,12 @@
-const end = "18 January 2025";
-const time = 6;
-const doneProject = 3;
+const end = "20 January 2025";
+const time = 12;
+export const doneProject = 5;
 // Values to Update;
 const start = "15 January 2025";
 const startDate = new Date(start);
 const endDate = new Date(end);
 const total = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
-const data = [
+export const data = [
     {
         title: "Started",
         value: start
@@ -32,5 +32,3 @@ const data = [
         linkTitle: "Youtube Video"
     }
 ];
-
-export default data;

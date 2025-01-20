@@ -1,9 +1,7 @@
-import data from "./data/projects";
-
 export default function Selector(props) {
-    const options = data.map((x) => (
+    const options = props.data.map((x) => (
         <option key={x.id} value={x.id}>
-            {x.id}. {x.name}
+            {x.id}. {x.title}
         </option>
     ));
 
@@ -15,7 +13,7 @@ export default function Selector(props) {
                     defaultValue={props.project}
                     onChange={(e) => props.func(e)}
                 >
-                    <option value="" disabled>
+                    <option value="">
                         - - Select a Project - -
                     </option>
                     {options}

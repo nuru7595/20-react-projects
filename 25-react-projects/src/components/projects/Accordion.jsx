@@ -1,8 +1,7 @@
 import { useState } from "react";
-import "./accordion.css";
-import data from "./data";
+import data from "../data/accordion";
 
-export default function Accordion() {
+export default function Accordion({ title }) {
     const [single, setSingle] = useState(null);
     const [multiple, setMultiple] = useState(false);
     const [multipleAccordion, setMultipleAccordion] = useState([]);
@@ -28,7 +27,7 @@ export default function Accordion() {
 
     return (
         <section>
-            <h2 className="title">Accordion</h2>
+            <h2 className="title">{title}</h2>
             <div className="accordion">
                 <button onClick={handleClick}>
                     {multiple ? "Disable" : "Enable"} Multiple View

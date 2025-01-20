@@ -1,7 +1,6 @@
-import "./randomColor.css";
 import { useState } from "react";
 
-export default function RandomColor() {
+export default function RandomColor({ title }) {
     const [color, setColor] = useState(true);
     const [randHex, setRandHex] = useState("#06B6D4");
     const [randRgb, setRandRgb] = useState("rgb(6, 182, 212)");
@@ -51,7 +50,7 @@ export default function RandomColor() {
 
     return (
         <section>
-            <h2 className="title">Random Color Generator</h2>
+            <h2 className="title">{title}</h2>
             <div
                 className="random-color"
                 style={{ backgroundColor: color ? randHex : randRgb }}

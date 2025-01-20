@@ -1,13 +1,11 @@
-import data from "./data/details";
-
-export default function Information() {
+export default function Information({ data }) {
     return (
         <section className="info">
             <h2 className="title">Information</h2>
             <table className="table-fixed w-full font-bold text-lg">
                 <tbody>
                     {data.map((x) => (
-                        <tr>
+                        <tr key={x.title}>
                             <td>{x.title}:</td>
                             <td>
                                 {x.link ? (

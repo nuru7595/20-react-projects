@@ -1,82 +1,108 @@
 const data = [
     {
         id: 0,
+        title: "Information",
         name: "Information"
     }, {
         id: 1,
+        title: "Accordion",
         name: "Accordion"
     }, {
         id: 2,
-        name: "Random Color Generator"
+        title: "Random Color Generator",
+        name: "RandomColor"
     }, {
         id: 3,
-        name: "Star Rating"
+        title: "Star Rating",
+        name: "Rating"
     }, {
         id: 4,
-        name: "Image Slider"
+        title: "Image Slider",
+        name: "Slider"
     }, {
         id: 5,
-        name: "Load More Button"
+        title: "Load More Button",
+        name: "LoadMore"
     }, {
         id: 6,
-        name: "Tree View / Menu UI"
+        title: "Tree View / Menu UI",
+        name: "TreeView"
     }, {
         id: 7,
-        name: "QR Code Generator"
+        title: "QR Code Generator",
+        name: "QrCode"
     }, {
         id: 8,
-        name: "Theme Switch"
+        title: "Theme Switch",
+        name: "ThemeSwitch"
     }, {
         id: 9,
-        name: "Scroll Indicator"
+        title: "Scroll Indicator",
+        name: "ScrollIndicator"
     }, {
         id: 10,
+        title: "Tabs",
         name: "Tabs"
     }, {
         id: 11,
-        name: "Modal Popup"
+        title: "Modal Popup",
+        name: "ModalPopup"
     }, {
         id: 12,
-        name: "Github Profile Finder"
+        title: "Github Profile Finder",
+        name: "ProfileFinder"
     }, {
         id: 13,
-        name: "Search Autocomplete"
+        title: "Search Auto Complete",
+        name: "AutoComplete"
     }, {
         id: 14,
-        name: "Tic Tac Toe"
+        title: "Tic Tac Toe",
+        name: "TicTac"
     }, {
         id: 15,
-        name: "Feature Flag Implementation"
+        title: "Feature Flag Implementation",
+        name: "FeatureFlag"
     }, {
         id: 16,
-        name: "useFetch Custom Hook"
+        title: "useFetch Custom Hook",
+        name: "UseFetch"
     }, {
         id: 17,
-        name: "useOnclickOutside Custom Hook"
+        title: "useOnclickOutside Custom Hook",
+        name: "UseOnClickOutside"
     }, {
         id: 18,
-        name: "useResponsive Custom Hook"
+        title: "useResponsive Custom Hook",
+        name: "UseResponsive"
     }, {
         id: 19,
-        name: "Scroll to Top and Bottom"
+        title: "Scroll to Top and Bottom",
+        name: "Scroll"
     }, {
         id: 20,
-        name: "Scroll to Particular Section"
+        title: "Scroll to Particular Section",
+        name: "ScrollTo"
     }, {
         id: 21,
-        name: "Weather App"
+        title: "Weather App",
+        name: "Weather"
     }, {
         id: 22,
-        name: "Food Recipe App"
+        title: "Food Recipe App",
+        name: "Recipe"
     }, {
         id: 23,
-        name: "Shopping Cart App"
+        title: "Shopping Cart App",
+        name: "Cart"
     }, {
         id: 24,
-        name: "Expense Tracker App"
+        title: "Expense Tracker App",
+        name: "Tracker"
     }, {
         id: 25,
-        name: "MERN Stack Blog App"
+        title: "MERN Stack Blog App",
+        name: "Blog"
     }
 ];
 
