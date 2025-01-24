@@ -1,6 +1,6 @@
-const end = "22 January 2025";
-const time = 14;
-export const doneProject = 7;
+const end = "24 January 2025";
+const time = 18;
+export const doneProject = 9;
 // Values to Update;
 const start = "15 January 2025";
 const startDate = new Date(start);
