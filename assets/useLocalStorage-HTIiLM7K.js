@@ -1,0 +1,1 @@
+import{r as a}from"./index-CMtDUWT7.js";function l(t,o){const[e,c]=a.useState(()=>{try{return localStorage.getItem(t)?JSON.parse(localStorage.getItem(t)):o}catch(r){return console.log(`Error Getting Theme: ${r}`),o}});return a.useEffect(()=>{try{localStorage.setItem(t,JSON.stringify(e))}catch(r){console.log(`Error Setting Theme: ${r}`)}},[t,e]),[e,c]}export{l as default};
