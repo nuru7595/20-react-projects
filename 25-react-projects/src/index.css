@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 @import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --font-Nunito: 'Nunito', sans-serif;
+  --font-Nunito: 'Nunito', sans-serif;
 }
 
 @utility container {
-    margin-inline: auto;
-    padding-inline: 12px;
+  margin-inline: auto;
+  padding-inline: 12px;
 }
 
 body {
@@ -143,4 +144,19 @@ h4 {
 
 .load-more>button:disabled {
   @apply cursor-not-allowed bg-stone-800;
+}
+
+/* Project 11 */
+.reveal {
+  animation: top-reveal 0.5s;
+}
+
+@keyframes top-reveal {
+  from {
+    top: -200px
+  }
+
+  to {
+    top: 0px
+  }
 }

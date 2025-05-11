@@ -35,7 +35,7 @@ export default function App() {
 
             try {
                 const module = await import(
-                    `./components/projects/${projectData.name}.jsx`
+                    `./components/projects/${projectData.id}/${projectData.name}.jsx`
                 );
                 setComponent(() => module.default);
             } catch {
@@ -66,7 +66,7 @@ export default function App() {
                 ) : Component ? (
                     <Component title={title} />
                 ) : (
-                    <Empty msg="Not Started Yet . . ." />
+                    <Empty msg="Not Found !!" />
                 )}
             </main>
             <Footer />
