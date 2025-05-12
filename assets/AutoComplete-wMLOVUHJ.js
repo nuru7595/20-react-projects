@@ -1,0 +1,1 @@
+import{j as e}from"./index-G6s2SIFJ.js";function o({title:t}){return e.jsxs("section",{children:[e.jsx("h2",{className:"title",children:t}),e.jsx("h2",{className:"font-bold p-6",children:"Up Next . . ."})]})}export{o as default};
