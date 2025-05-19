@@ -38,8 +38,16 @@ export default function User({ userData }) {
                     {name || login}
                 </a>
             </h3>
-            <p className="font-bold text-center">{location}</p>
-            <p className="text-center">{bio}</p>
+            <p
+                className={`text-center ${
+                    location ? "font-bold" : "text-red-700"
+                }`}
+            >
+                {location ? location : "No Location added yet!"}
+            </p>
+            <p className={`text-center ${bio ? null : "text-red-700"}`}>
+                {bio ? bio : "No bio added yet!"}
+            </p>
             <div className="flex flex-col sm:flex-row justify-around items-center gap-3">
                 <p>
                     Joined On:{" "}
