@@ -61,46 +61,42 @@ const data = [
         name: "TicTac"
     }, {
         id: 15,
-        title: "Feature Flag Implementation",
-        name: "FeatureFlag"
-    }, {
-        id: 16,
         title: "useFetch Custom Hook",
         name: "UseFetch"
     }, {
-        id: 17,
+        id: 16,
         title: "useOnclickOutside Custom Hook",
         name: "UseOnClickOutside"
     }, {
-        id: 18,
+        id: 17,
         title: "useResponsive Custom Hook",
         name: "UseResponsive"
     }, {
-        id: 19,
+        id: 18,
         title: "Scroll to Top and Bottom",
         name: "Scroll"
     }, {
-        id: 20,
+        id: 19,
         title: "Scroll to Particular Section",
         name: "ScrollTo"
     }, {
-        id: 21,
+        id: 20,
         title: "Weather App",
         name: "Weather"
     }, {
-        id: 22,
+        id: 21,
         title: "Food Recipe App",
         name: "Recipe"
     }, {
-        id: 23,
+        id: 22,
         title: "Shopping Cart App",
         name: "Cart"
     }, {
-        id: 24,
+        id: 23,
         title: "Expense Tracker App",
         name: "Tracker"
     }, {
-        id: 25,
+        id: 24,
         title: "MERN Stack Blog App",
         name: "Blog"
     }

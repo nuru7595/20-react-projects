@@ -1,6 +1,6 @@
-const end = "12 May 2025";
-const time = 22;
-export const doneProject = 13;
+const end = "13 June 2025";
+const time = 25;
+export const doneProject = 15;
 // Values to Update;
 const start = "15 January 2025";
 const startDate = new Date(start);
@@ -23,26 +23,32 @@ const total = `${months} Month${months !== 1 ? "s" : ""} ${days} Day${
 export const data = [
     {
         title: "Started",
-        value: start
-    }, {
+        value: start,
+    },
+    {
         title: "Last Updated",
-        value: end
-    }, {
+        value: end,
+    },
+    {
         title: doneProject >= 25 ? "Completed in" : "Ongoing",
-        value: `${total}`
-    }, {
+        value: `${total}`,
+    },
+    {
         title: "Allocated Time",
-        value: `${time} Hours`
-    }, {
+        value: `${time} Hours`,
+    },
+    {
         title: "Progress",
-        value: `${doneProject} / 25 Projects`
-    }, {
+        value: `${doneProject} / 25 Projects`,
+    },
+    {
         title: "Status",
-        value: doneProject >= 25 ? "Completed!" : "Running . . ."
-    }, {
+        value: doneProject >= 25 ? "Completed!" : "Running . . .",
+    },
+    {
         title: "Source",
         value: "Free Code Camp",
         link: "https://youtu.be/5ZdHfJVAY-s",
-        linkTitle: "Youtube Video"
-    }
+        linkTitle: "Youtube Video",
+    },
 ];
