@@ -1,0 +1,1 @@
+import{r as i}from"./index-5TeZpWbz.js";function o(){const[t,n]=i.useState({width:0,height:0});function e(){n({width:window.innerWidth,height:window.innerHeight})}return i.useLayoutEffect(()=>(e(),window.addEventListener("resize",e),()=>{window.removeEventListener("resize",e)}),[]),t}export{o as default};
