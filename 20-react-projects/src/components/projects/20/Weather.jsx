@@ -93,7 +93,7 @@ export default function Weather({ title }) {
                 ) : (
                     <div className="pt-3">
                         <h3 className="text-red-700 font-bold text-center">
-                            {`!! ${data.message.toUpperCase()} !!`}
+                            {`!! City Not Found !!`}
                         </h3>
                     </div>
                 )}
