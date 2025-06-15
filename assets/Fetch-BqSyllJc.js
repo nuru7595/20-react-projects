@@ -1,1 +1,0 @@
-import{r as e}from"./index-5TeZpWbz.js";function u(a){const[n,s]=e.useState(null),[c,t]=e.useState(!1);async function r(){t(!0);try{const f=await(await fetch(a)).json();s(f),t(!1)}catch(o){console.log(o),s(null),t(!1)}}return e.useEffect(()=>{r()},[a]),{loading:c,data:n}}export{u as default};

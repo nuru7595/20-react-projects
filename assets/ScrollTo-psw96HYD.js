@@ -1,1 +1,0 @@
-import{j as e}from"./index-5TeZpWbz.js";function r({title:s}){return e.jsxs("section",{children:[e.jsx("h2",{className:"title",children:s}),e.jsx("div",{className:"px-3 py-6 text-center font-bold",children:e.jsx("h3",{children:"Working..."})})]})}export{r as default};
