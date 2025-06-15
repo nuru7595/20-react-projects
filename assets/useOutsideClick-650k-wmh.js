@@ -1,1 +1,0 @@
-import{r as o}from"./index-vdFMmn9R.js";function s(e,n){o.useEffect(()=>{function t(r){!e.current||e.current.contains(r.target)||n(r)}return document.addEventListener("mousedown",t),document.addEventListener("touchstart",t),()=>{document.removeEventListener("mousedown",t),document.removeEventListener("touchstart",t)}},[e,n])}export{s as default};

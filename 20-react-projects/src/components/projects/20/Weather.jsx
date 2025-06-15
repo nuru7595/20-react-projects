@@ -22,6 +22,8 @@ export default function Weather({ title }) {
         }
     };
 
+    console.log(data);
+
     useEffect(() => {
         fetchApi("Pabna");
     }, []);
@@ -61,7 +63,11 @@ export default function Weather({ title }) {
                         Search
                     </button>
                 </div>
-                {data ? (
+                {loading ? (
+                    <h3 className="text-center pt-3">
+                        Loading Data! Please Wait...
+                    </h3>
+                ) : data && data.name ? (
                     <div className="space-y-3 text-center pt-3">
                         <h2 className="font-bold">
                             {data.name}, {data.sys.country}
@@ -84,7 +90,13 @@ export default function Weather({ title }) {
                             </div>
                         </div>
                     </div>
-                ) : null}
+                ) : (
+                    <div className="pt-3">
+                        <h3 className="text-red-700 font-bold text-center">
+                            {`!! ${data.message.toUpperCase()} !!`}
+                        </h3>
+                    </div>
+                )}
             </div>
         </section>
     );
